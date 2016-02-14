@@ -1,0 +1,81 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: hsl(20, 75%, 75%);
+    transition: ease 2500ms;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    text-align: center;
+    transform: translate(0,-50%);
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-rendering: optimizeLegibility;
+    color: #fff;
+    opacity: 0.25;
+    font-size: 90px;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    opacity: 0.25;
+    pointer-events: none;
+    position: relative;
+    z-index: 10;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    background-blend-mode: multiply;
+}
+
+#tweets {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.5;
+    font-family: monospace;
+    line-height: 1;
+    text-align: center;
+}
+
+.label {
+    font-family: monospace;
+    line-height: 1;
+    margin-top: -18px!important;
+    margin-left: 20px!important;
+}
+
+#flicker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.333;
+}
+
+
+#flicker.flicker {
+    background: #000;
+}

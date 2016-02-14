@@ -1,0 +1,21 @@
+{
+  "name": "tweet-fm",
+  "version": "1.0.0",
+  "description": "Representing tweets as sound",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "socketio": "^1.0.0",
+    "twit": "^2.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Mike Mitchell <@innernets>",
+  "license" : "MIT",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/m10l/tweet-fm.git"
+  }
+}
