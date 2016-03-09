@@ -5,6 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.13.4",
+    "socket.io": "^1.4.5",
     "socketio": "^1.0.0",
     "twit": "^2.2.2"
   },
