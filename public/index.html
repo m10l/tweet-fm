@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Tweet FM</title>
     <meta name="google" content="notranslate" />
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:100|Source+Code+Pro' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
     <script src="/socket.io/socket.io.js"></script>
     <script src="Tone.js"></script>
@@ -15,6 +16,20 @@
     <h1 id="logo">Tweet FM</h1>
     <div id="map"></div>
     <div id="tweets"></div>
+    <input type="checkbox" id="about-toggle">
+    <label for="about-toggle">About</label>
+    <div id="about">
+        <h2>What is this?</h2>
+        <p>A demo of WebAudio API (using Tone.js), Socket.IO, and Twitter streams</p>
+        <p>Tweets represented as audio</p>
+        <h2>Who am I?</h2>
+        <p>Mike, a developer at <a href="//simpleweb.co.uk/" target="_blank">Simpleweb</a>, focused on designing and building UI's for web and mobile applications.</p>
+        <p>
+            <a href="//twitter.com/innernets" target="_blank">@innernets</a>
+            <a href="mailto:omg@lol.xxx" target="_blank">omg@lol.xxx</a>
+            <a href="//github.com/m10l/tweet-fm" target="_blank">GitHub</a>
+        </p>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>

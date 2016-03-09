@@ -23,7 +23,7 @@ h1 {
     margin: 0;
     padding: 0;
     line-height: 1em;
-    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Work Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -53,13 +53,13 @@ h1 {
     left: 50%;
     transform: translate(-50%,-50%);
     opacity: 0.5;
-    font-family: monospace;
+    font-family: 'Source Code Pro', monospace;
     line-height: 1;
     text-align: center;
 }
 
 .label {
-    font-family: monospace;
+    font-family: 'Source Code Pro', monospace;
     line-height: 1;
     margin-top: -18px!important;
     margin-left: 20px!important;
@@ -78,4 +78,69 @@ h1 {
 
 #flicker.flicker {
     background: #000;
+}
+
+#about-toggle {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: none;
+}
+
+label[for="about-toggle"] {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: 'Source Code Pro', monospace;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+h2 {
+    font-weight: 100;
+    margin: 0;
+}
+
+#about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 50;
+    max-width: 400px;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Work Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1.5;
+    font-weight: 100;
+    color: #fff;
+    opacity: 0;
+    transition: ease 250ms;
+    pointer-events: none;
+}
+
+#about-toggle:checked ~ #about {
+    opacity: 1;
+    pointer-events: all;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255, 0.5);
+    padding-bottom: 2px;
+    transition: ease 250ms;
+}
+
+a:hover,
+a:focus {
+    outline: none;
+    border-bottom: 1px solid #fff;
 }
